@@ -695,3 +695,48 @@ section + section{ border-top: 1px solid var(--rule); }
   color: var(--muted);
 }
 .back-link:hover{ color: var(--ink); }
+
+/* ---------- student work: 左图右字 ---------- */
+
+.student-project{
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 48px;
+  align-items: center;
+  padding: 56px 0;
+  border-top: 1px solid var(--rule);
+}
+.student-project:first-child{ border-top: none; padding-top: 0; }
+
+.student-project .img-slot{
+  overflow: hidden;
+  border: 1px solid var(--rule);
+  background: var(--paper-raised);
+}
+.student-project .img-slot img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.student-project .num{
+  display: block;
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+.student-project h2{
+  font-size: 24px;
+  margin: 0 0 18px;
+}
+.student-project p{
+  color: var(--ink-soft);
+  margin: 0 0 14px;
+}
+.student-project p:last-child{ margin-bottom: 0; }
+
+@media (max-width: 820px){
+  .student-project{ grid-template-columns: 1fr; gap: 22px; padding: 40px 0; }
+}
