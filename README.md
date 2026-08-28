@@ -27,12 +27,6 @@ gsyang-site/
 <div class="img-slot"><span>images/architecture-01.jpg</span></div>
 ```
 
-把它换成真正的图片标签就行：
-
-```html
-<img src="images/architecture-01.jpg" alt="Pingxiang 私人住宅群实景">
-```
-
 1. 打开你原来的 Google Sites 页面，右键图片 → 另存为，把图片下载下来
 2. 放进本项目的 `images/` 文件夹，文件名随意，但要和 `src=""` 里写的一致
 3. 按上面的方式把占位 `<div class="img-slot">` 换成 `<img>` 标签
