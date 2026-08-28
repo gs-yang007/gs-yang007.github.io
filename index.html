@@ -10,11 +10,18 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="home">
 
 <header class="site-header">
   <div class="wrap header-inner">
-    <a href="index.html" class="brand">GS YANG</a>
+    <a href="index.html" class="brand">
+      <svg class="brand-mark" width="26" height="14" viewBox="0 0 26 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="6.5" cy="7" r="5.5" stroke="currentColor" stroke-width="1.4"/>
+        <circle cx="19.5" cy="7" r="5.5" stroke="currentColor" stroke-width="1.4"/>
+        <line x1="12" y1="7" x2="14" y2="7" stroke="currentColor" stroke-width="1.4"/>
+      </svg>
+      GS YANG
+    </a>
     <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
     <label for="nav-toggle" class="nav-toggle-label" aria-label="打开菜单"><span></span></label>
     <nav class="site-nav">
@@ -36,32 +43,29 @@
 
 <main>
 
-  <section class="hero">
-    <div class="wrap hero-grid">
-      <div>
-        <p class="eyebrow">MY NAME IS</p>
-        <h1>Guosheng<br>Yang</h1>
-        <p class="lede" style="margin-top:18px;">I WAS A DESIGNER — spending eight years studying and practicing architectural design, I am now a student again to explore a new world.</p>
+  <section class="photo-hero">
+    <div class="photo-hero-bg">
+      <div class="photo-hero-panel">
+        <div class="dot-grid" aria-hidden="true"></div>
       </div>
-      <dl class="title-block">
-        <div><dt>Name</dt><dd>Guosheng Yang</dd></div>
-        <div><dt>Was</dt><dd>Architect, 3 yrs practice</dd></div>
-        <div><dt>Now</dt><dd>PhD student</dd></div>
-        <div><dt>Based</dt><dd>HKUST(GZ), Guangzhou</dd></div>
-        <div><dt>Status</dt><dd><span class="status-dot"></span>Open to collaborations</dd></div>
-        <div><dt>Fields</dt><dd>Urban study; Architecture design</dd></div>
-      </dl>
+      <div class="photo-hero-image">
+        <img src="images/image1.jpg" alt="Guosheng Yang looking out over a coastal cliff">
+      </div>
     </div>
+    <div class="wrap photo-hero-copy">
+      <p class="eyebrow-italic">MY NAME IS</p>
+      <h1 class="photo-hero-name">GUOSHENG YANG</h1>
+      <p class="tag-pill">I WAS A DESIGNER</p>
+    </div>
+    <a href="#news" class="scroll-cue" aria-label="向下滚动查看更多">⌄</a>
   </section>
 
-  <section>
+  <section id="news">
     <div class="wrap">
       <p class="eyebrow" style="margin-bottom:18px;">NEWS</p>
       <div class="news-row">
-        <span class="eyebrow">2026</span>
-        <p style="margin:0;">Good news — our presentation was awarded the "Best Paper Award" in the 4th international conference on urban science and intelligence </p>
         <span class="eyebrow">2025</span>
-        <p style="margin:0;">Good news — our presentation was awarded the "Best Presentation Award" by GSCS&amp;ICUI 2025.</p>
+        <p style="margin:0;">Good news — one abstract was accepted by GSCS&amp;ICUI 2025. Looking forward to seeing you at PolyU Hong Kong this August!</p>
       </div>
     </div>
   </section>
@@ -111,6 +115,7 @@
   <div class="wrap footer-inner">
     <a href="mailto:gyang559@connect.hkust-gz.edu.cn">gyang559@connect.hkust-gz.edu.cn</a>
     <span>HKUST(GZ), Nansha District, Guangzhou</span>
+    <span>+86 182 7763 6207</span>
   </div>
 </footer>
 
