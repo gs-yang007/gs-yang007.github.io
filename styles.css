@@ -593,6 +593,22 @@ section + section{ border-top: 1px solid var(--rule); }
   font-size: 12.5px;
 }
 
+.gallery .img-slot:has(img){
+  aspect-ratio: auto;
+  display: block;
+  padding: 0;
+  overflow: hidden;
+  border-style: solid;
+  border-color: var(--rule);
+  background: var(--paper-raised);
+  align-self: start;
+}
+.gallery .img-slot:has(img) img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* ---------- about page ---------- */
 
 .about-grid{
