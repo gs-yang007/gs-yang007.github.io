@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GS YANG — Photography</title>
+<meta name="description" content="Selected photography.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="index.html" class="brand">GS YANG</a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+    <label for="nav-toggle" class="nav-toggle-label" aria-label="打开菜单"><span></span></label>
+    <nav class="site-nav">
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <div class="nav-dropdown">
+        <a href="work.html">WORK</a>
+        <div class="dropdown-panel">
+          <a href="work-architecture.html">Architecture</a>
+          <a href="work-photography.html" aria-current="page">Photography</a>
+          <a href="work-student-work.html">Student Work</a>
+          <a href="work-others.html">Others</a>
+        </div>
+      </div>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero" style="padding-bottom:32px;">
+    <div class="wrap">
+      <a class="back-link" href="work.html">← WORK</a>
+      <p class="eyebrow">02 — PHOTOGRAPHY</p>
+      <h1 style="font-size:clamp(32px,4.5vw,48px); margin-top:12px;">Selected frames.</h1>
+    </div>
+  </section>
+
+  <section style="padding-top:0;">
+    <div class="wrap">
+      <div class="gallery">
+        <div class="img-slot square"><span>images/photography-01.jpg</span></div>
+        <div class="img-slot square"><span>images/photography-02.jpg</span></div>
+        <div class="img-slot square"><span>images/photography-03.jpg</span></div>
+        <div class="img-slot square"><span>images/photography-04.jpg</span></div>
+        <div class="img-slot square"><span>images/photography-05.jpg</span></div>
+        <div class="img-slot square"><span>images/photography-06.jpg</span></div>
+        <div class="img-slot square"><span>images/photography-07.jpg</span></div>
+        <div class="img-slot square"><span>images/photography-08.jpg</span></div>
+        <div class="img-slot square"><span>images/photography-09.jpg</span></div>
+        <div class="img-slot square"><span>images/photography-10.jpg</span></div>
+        <div class="img-slot square"><span>images/photography-11.jpg</span></div>
+        <div class="img-slot square"><span>images/photography-12.jpg</span></div>
+      </div>
+
+      <div class="gallery-note">
+        原网站这一页大约有 40 张图片，逐张排列、没有文字说明。这里先放了 12 个占位格作为模板 — 把 <code>.gallery</code> 里的 <code>&lt;div class="img-slot square"&gt;&lt;/div&gt;</code> 块复制、粘贴到需要的数量，再把每个占位格换成真实的 <code>&lt;img src="images/xxx.jpg" alt="..."&gt;</code> 就行。
+      </div>
+
+      <p class="copyright-note" style="margin-top:28px;">Any commercial use of the images is prohibited and all legal rights will be reserved.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <a href="mailto:gyang559@connect.hkust-gz.edu.cn">gyang559@connect.hkust-gz.edu.cn</a>
+    <span>HKUST(GZ), Nansha District, Guangzhou</span>
+    <span>+86 182 7763 6207</span>
+  </div>
+</footer>
+
+</body>
+</html>
